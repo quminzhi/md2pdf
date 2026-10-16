@@ -1,0 +1,5 @@
+#!/bin/zsh
+SCRIPT_DIR="$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)"
+export PYTHONPATH="$SCRIPT_DIR/.md2pdf-lib${PYTHONPATH:+:$PYTHONPATH}"
+# Bundled Pillow extensions require CPython 3.14, independent of pyenv.
+exec /usr/local/bin/python3.14 "$SCRIPT_DIR/md2pdf.py" "$@"

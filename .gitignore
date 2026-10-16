@@ -1,0 +1,7 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.md2pdf-lib/
+.html2pdf-lib/
+.venv/
+.pytest_cache/
